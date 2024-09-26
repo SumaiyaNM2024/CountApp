@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function UseEffect() {
     const [count, setCount] = useState(0);
 
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+      });
+    
   const increase = () => {
     setCount(() => count + 1);
   };
+
     return (
         <>
           <div style={{ textAlign: "center" }}>
