@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 
 function App() {
@@ -7,14 +7,6 @@ function App() {
   const increase = () => {
     setCount(() => count + 1);
   };
-
-  useEffect(()=>{
-  document.title = `You clicked ${count} times`;
-
-})
-
-
-
 
   // const decrease =() => {
   //   setCount(() => count - 1)
